@@ -1,0 +1,4 @@
+Static Binding / Early binding
+* Compile time
+* operator overloading method
+* it takes place using functions

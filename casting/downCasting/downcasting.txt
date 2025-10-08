@@ -1,0 +1,4 @@
+Taking a insect object and casting it as a snail type. 
+* Access: When we downcast a superclass object to a subclass it can access parent members.
+* Does not work if typecast object is different from expected object. (Bee is different from expected snail)
+* With downcasting the object of the superclass can access the subclass methods and superclass methods. 

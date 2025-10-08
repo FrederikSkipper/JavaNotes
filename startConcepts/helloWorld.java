@@ -1,4 +1,6 @@
-public class HelloWorld {
+package startConcepts;
+
+public class helloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }

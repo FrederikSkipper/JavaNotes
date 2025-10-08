@@ -1,0 +1,7 @@
+Dynamic Binding / Late binding
+* It takes place at runtime
+* It uses overriding methods
+* It uses virtuel functions (A method in superclass which can be overriden by a method in subclass)
+* At runtime the compiler decides which method to choose based on the actual type of the object. 
+* Compiler chooses actual object at runtime. Classref refobject = new object();  (See insect.java as example)
+* Virtuel function (Function we expect to be overridden by sub-method)
