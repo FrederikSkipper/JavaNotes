@@ -7,7 +7,6 @@ public class insectData implements list.dataCell {
     }
     public static void main(String[] args) { 
         insectData myCell = new insectData();
-        list.datacell myCell = new insectData();
         myCell.getCell();
     }
 }
