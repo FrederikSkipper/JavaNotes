@@ -1,0 +1,3 @@
+Static Methods in interfaces
+* The idea of a static interface is a place where we can store similar methods.
+* {Implementation: They have to be called using the interface name preceeding the method name. e.g insect.lifetime();} 
