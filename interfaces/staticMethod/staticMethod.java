@@ -13,7 +13,7 @@ class snail implements insect {
     public static void main(String[] args) {
         snail mySnail = new snail(); // create snail object
 
-        insect.lifetime(); // output: insect age
+        insect.lifetime(); // output: insect age (We can only use static method via interface.staticMethod - can only be called using interface as context)
 
         mySnail.overrideMethod("Overriding second method in insect"); // Output "overiding second method in insect"
     }

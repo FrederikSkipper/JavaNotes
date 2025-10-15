@@ -1,2 +1,2 @@
 nestedInterface
-* nestedInterface is always static and public
+* The nestedInterface itself is always static and public
