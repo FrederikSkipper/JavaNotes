@@ -12,5 +12,7 @@ SYNTAX: Class x implements interface a
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Interface and multiple inheritance.
-For interfaces with abstract methods: Inheritance of methods from multiple interfaces is ok. (Doublets dont matter since, the body isnt implemented) 
-For interfaces with non-abstract methods: Inheritance of methods from multiple interfaces must be overridden. (We cant have 2 homogeniuos functions with different output)
+* For interfaces with abstract methods: Inheritance of methods from multiple interfaces is ok. (Doublets dont matter since, the body isnt implemented) 
+* For interfaces with non-abstract methods: Inheritance of methods from multiple interfaces must be overridden. (We cant have 2 homogeniuos functions with different output)
+* The superclass methods wins, if inheriting from both a superclass and interface.
+* The most specific superInterface 
