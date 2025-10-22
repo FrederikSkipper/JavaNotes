@@ -11,6 +11,6 @@ public class example {
     }
 
 public static void main(String[] args) {
-    removeBalance(500); // Should throw exception.
+    removeBalance(100); // Throws IndexOutOfBoundException
     }
 }

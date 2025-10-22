@@ -1,0 +1,3 @@
+If an try catch statement has multiple catch (exceptions).
+* We must then, specify the most specific first. (Spefic -> general)
+

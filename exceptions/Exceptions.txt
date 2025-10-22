@@ -1,0 +1,14 @@
+Checked and uncheked exceptions:
+--------------------------------
+[Checked]:
+* Checked exceptions are problems outside the program code such as (outOfMemory or DB problems)
+* Checked exceptions need to be thrown!
+* Checked exceptions are checked by the compiler at compiletime
+* Classes under Exception except those under runtimeexception are checked.
+
+[Un-Checked]:
+* Checked at runtime
+* Does not require handling at compile-time.
+* No handling required
+* Classes under error and runtimeexceptions are un-checked.
+ 
