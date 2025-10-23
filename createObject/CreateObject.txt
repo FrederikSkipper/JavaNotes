@@ -1,0 +1,12 @@
+{CreateObject}
+* To create a Object we need a constructor to initialise values and build the object using the attributes of the class.
+* To call a constructor we use the new keyword e.g new Numbers()
+* The other side og the statement to create the object tells us which type/class the object belongs to. 
+
+
+{Constructors}
+**Description:** A constructor in Java is a special method used to initialise object.
+**Constraints:** It Must have the same name as the class.
+**Calltime:** It is called when an object of a class is created
+**Use-case:** It is used to set initial values for object attributes.
+

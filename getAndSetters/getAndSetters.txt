@@ -1,0 +1,4 @@
+{Get and Setters}
+* Get does NOT need argument returns the current state of the variable number.
+* Setter: Needs a argument to be able to change via this.number = NewValue
+* Public get and setters, lets use read the private attribute even = 2. 

@@ -1,0 +1,5 @@
+{.this}
+* Refers to the current object in a constructor or method!
+* In the example: we call (this.name = name): We refer to myCar.name attribute = passed in name "Toyota"
+
+
