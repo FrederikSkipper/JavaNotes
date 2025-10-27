@@ -1,0 +1,5 @@
+Generics
+---------
+[Use-case]
+* We can use the same constructor, no matter the type of arguments
+* Instead we define the type when creating the object
