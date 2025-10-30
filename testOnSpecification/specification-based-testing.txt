@@ -1,0 +1,13 @@
+Specification-based testing / functional / black box
+------------------------------------------------------
+* Based on the method Specification
+* Test the input/output correctness
+
+------------------------------------------------------
+[Testing methods]:
+* Equivalance partitioning
+* Boundary value
+* Error uessing
+
+
+

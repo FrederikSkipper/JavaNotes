@@ -1,0 +1,10 @@
+Code-based testing / Structural / White-box
+--------------------------------------------
+* based on execution of statements/branches
+
+
+------------------------------------------------------
+[Testing methods]:
+* Control flow testing
+* Data flow testing
+* Statements coverage testing
