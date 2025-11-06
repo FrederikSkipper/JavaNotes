@@ -1,0 +1,2 @@
+{Single Reponsibility}
+* A class should only have one purpose in the system

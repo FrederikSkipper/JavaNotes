@@ -1,0 +1,7 @@
+{Interface segregation}
+* Do not serve an interface to a user, which is irrelevant to them. 
+
+Example:
+" Do not implement the general interface of foods to a user that has allergics. 
+ Instead introduce them to a allergics interface."
+ 

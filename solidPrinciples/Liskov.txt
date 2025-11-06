@@ -1,0 +1,5 @@
+{Liskov's substitution}
+* Derived or child classes must be suitable for their base or parent class
+
+Example:
+" A Cola is a derived class of Beverage and therefore we can swap them without behavioral changes"

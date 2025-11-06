@@ -1,0 +1,6 @@
+{Open closed}
+* Entities such as: classes, methods, blocks should be open for extension but closed for modification.
+
+Example:
+" There is a class vacuumer that handles vacuuming. However there is a new model that also washes.
+ Instead of editing the existing vacuumer class, we create a new class VacuumerWasher which extends vacuumer. "
