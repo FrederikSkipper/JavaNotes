@@ -6,10 +6,9 @@ public class Popcorn implements Snack {
     SnackType type;
   
 
-    public Popcorn(String name, int price, SnackType type) {
+    public Popcorn(String name, int price) {
         this.name = name;
         this.price = price;
-        this.type = SnackType.POPCORN;
     }
     
     public String getName() {

@@ -8,13 +8,13 @@ public class SnacksFactory {
     */
 
 
-    public static Snack assembleSnack(SnackType type, String name, int price) {
-        switch(type) {
-        case Dorritos:
-        return new Dorritos(name, price);
-        break;
-        case Popcorn:
-        return new Popcorn(name, price);
+    public Snack assembleSnack(SnackType type) {
+        Snack snack = null;
+        if (type.equals(SnackType.DORRITOS)) {
+        snack = new Dorritos(null, 0);
+        } else if (type.equals(SnackType.POPCORN)){
+            snack = new Popcorn(null, 0);
+        }  
+        return snack;
     }
-}   
 }
