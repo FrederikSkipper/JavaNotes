@@ -1,6 +1,7 @@
 package creationalDesignPatterns.SimpelFactoryMethod;
 
-public class Snack {
-    int price;
-
+public interface Snack {
+    public String getName();
+    public int getPrice();
+    public SnackType getSnackType();
 }
