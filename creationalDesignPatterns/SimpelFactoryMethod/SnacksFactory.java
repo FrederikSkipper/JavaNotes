@@ -1,12 +1,20 @@
 package creationalDesignPatterns.SimpelFactoryMethod;
 
 public class SnacksFactory {
-    
-    public Snack assembleSnack(String request) {
-        if ("Dorritos".equals(request)){
-            return new Dorritos();
-        } else if (("Popcorn").equals(request)){
-            return new Popcorn();
-        }
+    /* 
+    public static Snack assembleSnack(String name, int price) {
+    return new Popcorn(name, price);
     }
+    */
+
+
+    public static Snack assembleSnack(SnackType type, String name, int price) {
+        switch(type) {
+        case Dorritos:
+        return new Dorritos(name, price);
+        break;
+        case Popcorn:
+        return new Popcorn(name, price);
+    }
+}   
 }

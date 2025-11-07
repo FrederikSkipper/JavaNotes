@@ -1,0 +1,9 @@
+{Simple Factory Method}
+---------------------------------------
+Guide: 
+Create Interface
+Implement a class against Interface
+Create a factory class
+Use the Factory
+---------------------------------------
+
