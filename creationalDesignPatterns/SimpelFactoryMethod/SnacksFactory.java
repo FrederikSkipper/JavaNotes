@@ -8,12 +8,12 @@ public class SnacksFactory {
     */
 
 
-    public Snack assembleSnack(SnackType type) {
+    public Snack assembleSnack(SnackOrder myOrder) {
         Snack snack = null;
-        if (type.equals(SnackType.DORRITOS)) {
-        snack = new Dorritos(null, 0);
-        } else if (type.equals(SnackType.POPCORN)){
-            snack = new Popcorn(null, 0);
+        if (myOrder.type.equals(SnackType.DORRITOS)) {
+        snack = new Dorritos("dorritos", 30);
+        } else if (myOrder.type.equals(SnackType.POPCORN)){
+            snack = new Popcorn("popcorn", 20);
         }  
         return snack;
     }

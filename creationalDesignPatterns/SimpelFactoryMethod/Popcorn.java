@@ -3,7 +3,6 @@ package creationalDesignPatterns.SimpelFactoryMethod;
 public class Popcorn implements Snack {
     private String name;
     private int price;
-    SnackType type;
   
 
     public Popcorn(String name, int price) {
@@ -17,9 +16,5 @@ public class Popcorn implements Snack {
 
     public int getPrice() {
         return this.price;
-    }
-
-    public SnackType getSnackType() {
-        return this.type;
     }
 }
