@@ -1,12 +1,6 @@
 package creationalDesignPatterns.SimpelFactoryMethod;
 
 public class SnacksFactory {
-    /* 
-    public static Snack assembleSnack(String name, int price) {
-    return new Popcorn(name, price);
-    }
-    */
-
 
     public Snack assembleSnack(SnackOrder myOrder) {
         Snack snack = null;
