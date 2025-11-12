@@ -1,0 +1,16 @@
+{Factory design pattern}
+-------------------------
+It defines an interface for creating objects but lets subclasses decide 
+
+-------------------------------------------------------------------------
+{Structure}
+Product                         Creator
+    ^                               ^
+    |                               |
+    |                               |
+ConcreteProduct. <----------    ConcreteCreator
+-------------------------------------------------------------------------
+Product (Snack) : Defines the interface.
+ConcreteProduct (Dorritos and Popcorn) : Implement product interface 
+Creator (SnackEmployee) : Declares the factory method (findIngredients) that returns a product object.
+ConcreteCreator  (DorittosEmployee and PopcornEmployee) : Implement creator interface and the factory method returning instances of conrete produts.
