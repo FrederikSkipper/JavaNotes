@@ -1,0 +1,25 @@
+{Decorator design pattern}
+---------------------------
+
+{Usecase}
+The decorator pattern allows us to add new functionality to an object dynymacally without modifying the original code. 
+
+{What does it do?}
+It creates decorator classes that wrap the orginal object and adds new functionality and attributes thereto.
+
+{Tutorial:}
+1. Create product Interface
+- The tesla interface
+
+2. Implement concrete product 
+- The TeslaModelY and TeslaModelS classes implements the interface
+
+3. Develop the Decorator
+- The TeslaDecorator abstract class implements the Tesla interface
+
+4. Develop the concrete decorators
+- The Autopilot and FSD classes which extends the TesalDecorator
+
+5. Use the decorators
+- Main
+
