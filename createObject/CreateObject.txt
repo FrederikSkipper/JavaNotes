@@ -1,7 +1,7 @@
 {CreateObject}
 * To create a Object we need a constructor to initialise values and build the object using the attributes of the class.
 * To call a constructor we use the new keyword e.g new Numbers()
-* The other side og the statement to create the object tells us which type/class the object belongs to. 
+* The other side of the statement to create the object tells us which type/class the object belongs to. 
 
 
 {Constructors}

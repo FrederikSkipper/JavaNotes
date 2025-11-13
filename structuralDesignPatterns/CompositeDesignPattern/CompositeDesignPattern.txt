@@ -1,0 +1,11 @@
+{Composite Design Pattern}
+--------------------------
+{UseCase}
+
+
+{Definition}
+The Composite Design Pattern allows you to compose objects into tree structures.
+It makes the client treat individual objects and compositions of objects uniformly.
+
+The Composite Design is about treating a group of objects that are to be treated in the same way as it was a single object.
+This allows the client to treat indicidual objects and compositions uniformly.
