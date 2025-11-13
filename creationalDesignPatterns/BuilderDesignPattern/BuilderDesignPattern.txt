@@ -1,0 +1,8 @@
+{Builder design pattern}
+The Builder design pattern allow us to create different variants of an object
+while avoiding the confusion of constructor parameters. 
+
+{Usecase}
+It solves the constructor Anti-pattern, where we need to keep track of many parameters.
+The builder fices this by calling a builder as parameter instead. 
+
