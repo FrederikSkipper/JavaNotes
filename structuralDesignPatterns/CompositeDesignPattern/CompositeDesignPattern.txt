@@ -1,11 +1,31 @@
 {Composite Design Pattern}
 --------------------------
-{UseCase}
-
-
 {Definition}
 The Composite Design Pattern allows you to compose objects into tree structures.
 It makes the client treat individual objects and compositions of objects uniformly.
 
-The Composite Design is about treating a group of objects that are to be treated in the same way as it was a single object.
-This allows the client to treat indicidual objects and compositions uniformly.
+
+{Problem}
+Lets say you have a box, within this box there can be smaller boxes and products
+and within those boxes can be more boxes and products. So a nested case!. 
+In this case how would we go about extracting all product id's in all of the boxes?
+The direct approach would be to unwrap all boxes and go over each product and sum the id's. 
+However this is extremely difficult.
+
+
+{Solution to the stated problem}
+We use the Composite Design Pattern: creating an interface with methods for getting all product id's. 
+These methods are passed down the lenght of the three. 
+
+{Design}
+1. Component interface
+Describes methods that are common to both simple and composite objects.
+
+2. Leaf
+
+
+{When to use?}
+* Tree like structures
+* Handle simple objects and composite objects uniformly.
+
+
