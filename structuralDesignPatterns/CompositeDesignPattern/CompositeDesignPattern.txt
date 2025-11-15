@@ -21,8 +21,16 @@ These methods are passed down the lenght of the three.
 1. Component interface
 Describes methods that are common to both simple and composite objects.
 
-2. Leaf
+2. Leaf 
+Basic element of the tree that does not contain sub-elements.
+Be aware we need to implement all methods from interface (Therefore we thow unsupportedOperation error) 
 
+3. Composite
+Element of the tree that has sub-elements but does not know, the conrete.  
+
+4. Client 
+The client works with the interFace in which both the complex and simple objects use and therefore
+the client can handle them uniformly. 
 
 {When to use?}
 * Tree like structures
