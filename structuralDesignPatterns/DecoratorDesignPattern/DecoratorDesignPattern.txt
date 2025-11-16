@@ -1,13 +1,24 @@
 {Decorator design pattern}
 ---------------------------
 
-{Usecase}
-The decorator pattern allows us to add new functionality to an object dynymacally without modifying the original code. 
-
-{What does it do?}
+{Definition}
+The decorator pattern allows us to add new functionality to an object dynamically without modifying the original code. 
 It creates decorator classes that wrap the orginal object and adds new functionality and attributes thereto.
 
-{Tutorial:}
+{Problem}
+When we have a car object and we want to dynamacally construct the car with different sub-classes.
+Then if we want to apply both sub-classes then we need to add an extra subclass just to deal with the instance of,
+a car build that has both sub-classes. 
+
+{Solution to the stated problem}
+Instead we create BaseDecorator classes that is: compositions linked with the sub-classes and that delegates the work,
+to these subclasses, in which they override the BaseDecorator class. 
+
+{Design}
+On going!
+
+
+{Tutorial}
 1. Create product Interface
 - The tesla interface
 
