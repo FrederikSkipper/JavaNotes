@@ -1,21 +1,31 @@
 {Adapter Design pattern}
 -------------------------
-{UseCase}
-Sometimes in Software there is a need need for two incompatible interfaces to work together.
-It is here the Adapter design pattern comes into play.
 
 {Definitions}
 The Adapter Design Pattern allows us to wrap an incompatible object in an adapter so that it becomes compatible with another class.
 The Adapter Design Pattern allows the interface of an existing class to be used as another interface. 
 
+{Problem}
+Sometimes in Software there is a need need for two incompatible interfaces to work together.
+It is here the Adapter design pattern comes into play.
 
 {When to use?}
 When you want to reuse an existing class but their interface are incompatible with the current system. 
 The Adapter Design Pattern then helps us convert the interface of a class into another interface, allowing us to reuse the class
-without chaing the source code. 
+without chaning the source code.
+
+{Design}
+1. Client interface (Monitor)
+It describes the method in which the client will use. 
+
+2. The service (legacyMonitor) 
+The class we cant use directly, becouse of incompatible interface.
+
+3. Adapter (MonitorAdapter)
+Wraps the object in the adapter.
 
 {Program:}
-The old legacyMonitor has a method hz() but the client expects a refreshRate() and calls this on the a monitor. 
+The old legacyMonitor has a method hz() but the client expects a refreshRate() and calls this on the monitor. 
 Therefore we create an instance of the legacyMonitor inside the MonitorAdapter wherein we have the refreshRate() and inside this the have the hz(). 
 So when the client calls refreshRate() it does so via a monitor object from the MonitorAdapter class with the correct method which wrapped the old method inside. 
 

@@ -6,16 +6,38 @@ The decorator pattern allows us to add new functionality to an object dynamicall
 It creates decorator classes that wrap the orginal object and adds new functionality and attributes thereto.
 
 {Problem}
-When we have a car object and we want to dynamacally construct the car with different sub-classes.
+When we have a car object and we want to dynamacally construct the car via different sub-classes.
 Then if we want to apply both sub-classes then we need to add an extra subclass just to deal with the instance of,
-a car build that has both sub-classes. 
+a car build that has both sub-classes.
+
+Rules of hindering: 
+Inheritance is static: meaning we cant alter an object via inheritance, we can only create a new object of the subclass type. 
+The problem with that is: If we want to have more than one parent class WE CANT in this instance. (Subclasses cant inherit from multiple parents)
+(FSD and Autopilot, would not both could extend a tesla)
+
 
 {Solution to the stated problem}
-Instead we create BaseDecorator classes that is: compositions linked with the sub-classes and that delegates the work,
+Instead we create BaseDecorator class that is: A composition linked with the sub-classes and that delegates the work,
 to these subclasses, in which they override the BaseDecorator class. 
 
 {Design}
-On going!
+1. Component (Tesla interface)
+It declares the common interface for decorators and concrete decorators.
+
+2. Concrete Component (TeslaModelS, TeslaModelY)
+The object we want to inject the decorators on. 
+Their methods are the ones, we want to modify via the concrete decorators
+
+3. Base decorator (TeslaDecorator)    
+Delegates the work to the concrete decorators
+Has object state, which concrete decorators extend and work on. 
+This is the part that remembers the state of the Tesla, the methods are overridden by the concrete decorators.
+
+4. Concrete decorators (FSD + autoPilot)
+Define the extre behaviors and override the BaseDecorator. 
+
+5. Client 
+We can "wrap" the tesla in multiple layers e.g AutoPilot and FSD. 
 
 
 {Tutorial}
