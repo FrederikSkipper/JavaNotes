@@ -1,0 +1,22 @@
+{Obser Pattern}
+
+{Definition}
+The observer pattern defines a depency for notifying when an objects state is changed.
+It notifies all objects that depend on said object and updates them automatically.
+
+{Problem}
+Break down an algorithm (assembleVechicle) so we can reuse the similar parts.
+
+{Solution to the stated problem}
+
+{Design}
+1. Abstract class (Vechicle)
+Declares template method, that is followed by all subclasses. 
+
+2. Concrete class (car and motorBike)
+The subclasses that can override all the steps, but not change the template method. 
+
+{When to use?}
+It is used when we have a general process that multiple classes follow, but some methods differ
+and can therefore be overridden. 
+
