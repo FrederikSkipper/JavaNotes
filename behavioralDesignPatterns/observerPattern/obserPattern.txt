@@ -1,4 +1,4 @@
-{Obser Pattern}
+{Observer Pattern}
 
 {Definition}
 The observer pattern defines a depency for notifying when an objects state is changed.
@@ -10,13 +10,17 @@ Break down an algorithm (assembleVechicle) so we can reuse the similar parts.
 {Solution to the stated problem}
 
 {Design}
-1. Abstract class (Vechicle)
-Declares template method, that is followed by all subclasses. 
+1. Subject (Subject interface)
+The subject interface contains methods that the Subject supports and implements.
 
-2. Concrete class (car and motorBike)
-The subclasses that can override all the steps, but not change the template method. 
+2. Observer (Observer interface)
+Defines a method (update) that the concrete observers must implement, for them to handle and recieve notification. 
 
-{When to use?}
-It is used when we have a general process that multiple classes follow, but some methods differ
-and can therefore be overridden. 
+3. Concrete Subject (StockExchange)
+It implements the Subject interface. 
+Contains a list of observers and methods for handling those, such as iterating though them and updating the stock price.
+
+4. Concrete Observer (StockApp)
+Implement Observer interface and updates the current stockprice.
+
 

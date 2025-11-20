@@ -1,6 +1,6 @@
 package behavioralDesignPatterns.observerPattern;
 
 // Observer interface
-interface FollowerNotification {
-    void onIgPost(InstagramPost post);
+public interface Observer {
+    void updatePrice(int price);
 }

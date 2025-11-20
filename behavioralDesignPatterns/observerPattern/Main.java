@@ -1,15 +1,21 @@
 package behavioralDesignPatterns.observerPattern;
 
 public class Main {
-    public static void main(String[] args){
-        // Create follower with userId's.
-        Follower Skipper = new Follower(20);
+    public static void main(String[] args) {
+        // Concrete subject initialised
+        StockExchange stockExchange = new StockExchange();
 
-        // starting IGSystem
-        IGSystem igSystem = new IGSystem();
-        igSystem.getNotification(Skipper);
+        // Observer initialised
+        Observer stockApp = new StockApp();
 
-        // A new post has come
-        igSystem.addIgPost("hej");
+        // Register an observer from stockApp on stockExchange Subject.
+        stockExchange.addObserver(stockApp);
+
+        // Change the stockprice on the StockExchange
+        stockExchange.newStockprice(200);
+        
+        // This leads to the notifyObserver being called and inside this is update method.
+        // The update method is iterated over all Observers and the update method is implemented by the StockApp. 
+        // Therefore the stockApp overrides update and gets price.
     }
 }
