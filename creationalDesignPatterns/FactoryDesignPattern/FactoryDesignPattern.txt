@@ -1,16 +1,41 @@
 {Factory design pattern}
 -------------------------
-It defines an interface for creating objects but lets subclasses decide 
 
--------------------------------------------------------------------------
-{Structure}
-Product                         Creator
-    ^                               ^
-    |                               |
-    |                               |
-ConcreteProduct. <----------    ConcreteCreator
--------------------------------------------------------------------------
-Product (Snack) : Defines the interface.
-ConcreteProduct (Dorritos and Popcorn) : Implement product interface 
-Creator (SnackEmployee) : Declares the factory method (findIngredients) that returns a product object.
-ConcreteCreator  (DorittosEmployee and PopcornEmployee) : Implement creator interface and the factory method returning instances of conrete produts.
+{Definition}
+It lets us Create an interface 
+
+
+{Problem}
+If we have a codebase only witin the Dorritos class we will have the Dorritos constructor and methods, but what if we suddenly want to add a popcorn functionality.
+Then we need to restructure the entire codebase since the construction of all objects happen in the dorritos class. 
+
+
+{Solution to the stated problem}
+We create a product interface containing all common methods for object creation. 
+We create concrete products Dorritos and Popcorn which implement the interface and has the method for getting the info the want. 
+We create the Creator class to declare the factory method, which is the method that is overridden and returns the correct object. (Dorritos or popcorn)
+We create the Concrete creator classes where we have defined the same method matching the abstract method, but in here we have the implementation, whereby
+we return the correct object. 
+Then when constructing an Employee of type DorritosEmployee and call the ingredientfinder, we method inside will be overriden and return the correct object.
+This object can then call the correct method. 
+
+
+{Design}
+1. Product Interface (Snack)
+The method common to all objects, that is created by the Creators subclasses.
+
+2. Concrete products (Dorritos and Popcorn)
+Different implementations of the product interface method. 
+
+3. Creator class (SnackEmployee)
+Declares the factory method, that returns new objects.
+* Make the factory method abstract to force the concrete Creators (DorittosEmployee and PopcornEmployee) to implement their own version of the method.
+
+4. Concrete creators (PopcornEmployee and DorittosEmployee)
+They override the Factory method findIngredients so it returns their implementation.
+
+
+{When to use?}
+* When we want to reuse existing code. (if we want a new Product, we can just create a new Product and Concrete Creator and override the factory method)
+
+

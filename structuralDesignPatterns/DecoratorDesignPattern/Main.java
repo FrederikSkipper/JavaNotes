@@ -7,7 +7,7 @@ public class Main {
         System.out.println(tesla.getPrice()+tesla.getSpecs()); // 300000 + Model Y
         
         
-        tesla = new FsdDecorator(tesla); // Call this constrcutor on the above tesla model y. 
+        tesla = new FsdDecorator(tesla); // Call this constructor on the above tesla model y. 
         System.out.println(tesla.getPrice()+tesla.getSpecs()); // 300000 + Model Y + Full self drive 
 
         tesla = new AutoPilotDecorator(tesla);

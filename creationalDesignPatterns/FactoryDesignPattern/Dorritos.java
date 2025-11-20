@@ -1,5 +1,5 @@
 package creationalDesignPatterns.FactoryDesignPattern;
-
+// Concrete product
 public class Dorritos implements Snack {
     @Override
     public void printIngredients() {

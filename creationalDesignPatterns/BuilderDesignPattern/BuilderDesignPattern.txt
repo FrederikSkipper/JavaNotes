@@ -2,8 +2,39 @@
 The Builder design pattern allow us to create different variants of an object
 while avoiding the confusion of constructor parameters. 
 
-{Usecase}
-It solves the constructor Anti-pattern, where we need to keep track of many parameters.
-Instead we create objects in steps, via the SnackBuilder class and on client side via method chaining.  
-
 - Good for multiStep processes (unlike Factory)
+
+
+{Definition}
+The Builder Design Pattern lets us construct complex objects step by step.
+Hereby we can create different representations of objects using the same constructor. 
+
+
+{Problem}
+When constructing complex objects it becomes a mess to remeber the order of arguments.
+
+
+{Solution to the stated problem}
+We create a Builder Interface to store the steps.
+We define different concrete builders for different products / types of objects.
+We define the director, to handle the different order for the different objects. 
+This leads to the user ONLY neading to construct the matching director and builder. 
+
+
+{Design}
+1. Builder interface (Snack)
+Construction steps common to all types of concrete builders
+
+2. Concrete builder classes (DorritosBuilder and PopcornBuilder)
+Define different implementations of the builder interface. 
+See the difference in the SaltAmount in dorritos vs popcorn respective builders.
+
+3. Products (dorritos)
+
+4. Director (SnackDirector)
+Determines the order of steps to take to construct.
+Instead of the user calling each step, we have different recipies with the same ingedients functions, but different order.
+We need to construct a popcorn different than a dorritos in the order, we mix the ingredients. 
+
+{When to use?}
+* When we want to construct different representations of the same product. (Different types of Snacks.)
