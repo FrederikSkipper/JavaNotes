@@ -1,0 +1,25 @@
+{Strategy Design Pattern}
+
+{Definition}
+Allows us to define a set of algortihms and define them in different classes. 
+So we can use them interchangeably. 
+
+{Problem}
+We have one class for multiple algortihms. 
+Breaks Solid principle Single Responsibility
+
+{Design}
+1. Context (Team)
+The class that uses a Strategy. 
+
+2. Strategy Interface (Soccer Strategy)
+The strategy interface is implemented by all concrete Strategies.
+It declares a method (formation) that the context (Team) uses.
+
+3. Concrete Strategies (OffensiveStrategy and DefensiveStrategy)
+Implement different variations of the method in the Interface.
+
+{When to use?}
+* Use when you want to use different variations of an algortihm within an object.
+* Use when you have similar classes that use the same functionality, but with different behaviors. 
+

@@ -12,7 +12,6 @@ In this case how would we go about extracting all product id's in all of the box
 The direct approach would be to unwrap all boxes and go over each product and sum the id's. 
 However this is extremely difficult.
 
-
 {Solution to the stated problem}
 We use the Composite Design Pattern: creating an interface with methods for getting all product id's. 
 These methods are passed down the lenght of the three. 

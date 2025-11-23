@@ -1,0 +1,40 @@
+{Command Design Pattern}
+
+{Definition}
+Pattern that turns a request into an object(Concrete Command). 
+This enables us to pass it in as request argument. 
+By this the client / Invoker doesnt need to know the specific request or have the implementation of it. 
+Therefore we can just call execute(command) and the concrete command will call the correct reciever method.
+
+{Problem}
+Each LandMower action calling the Business logic layer directly. (Duplicate code)
+StartMowing ------> Business layer
+StopMowing ------> Business layer
+
+{Solution to stated problem}
+Instead we have one Invoker class contacting the business logic, not matter the action. 
+Execute ------> (StartMowing or Stopmowing) Business Layer
+
+{Design}
+1. Invoker class (MowerApp)
+Initiating an execute request which is linked to the concrete command class. 
+execute.(command)
+
+2. Command interface (Command)
+The Command interface abstract methods is applied an implementation by the concrete Command class.
+
+3. Concrete Command (StartCommand and StopCommand)
+Invoker calls ->  Concrete command calls -> Reciever does action!
+* public void execute(Command command) {
+        command.run();
+    }
+* public void run(){
+        robotMower.Start();
+    }
+* public void Start() {
+        System.out.println("Starting cutting session");
+    }
+
+4. Reciever (RobotMower)
+Has the implementation of Concrete Commands method.
+
