@@ -1,0 +1,23 @@
+{Visitor Design Pattern}
+
+{Definition}
+It seperates algortihms/behaviors from the objects they operate on.
+Allowing us to add new behaviors without modifying the structure of the object. 
+
+{Design}
+
+1. Visitor interface (VechicleInspector)
+Methods that take a concrete element (Car and Motorbike) as argument.
+
+2. Concrete visitor (VechicleTest)
+Implements the different behaviors from the visitor interface.
+
+3. Element interface (Vechicle)
+Contains method for accepting visitors.
+The method contains the argument of the type of visitor.
+In the example the type is VechicleTest visitor. 
+
+4. Concrete element (VechicleTest)
+The concrete element must implement their specific accept method.
+The method takes a concrete visitor as argument and applies their behavior to the visitor. 
+
