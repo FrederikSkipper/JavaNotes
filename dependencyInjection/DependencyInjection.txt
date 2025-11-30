@@ -1,0 +1,12 @@
+{Dependecy injection}
+
+{Definition}
+A techinique used to solve Inversion of control between classes and their dependecies.
+A dependency is an object that another object depends on.
+
+{Problem}
+Without Dependecy injection we create 2 different methods for handling the same type of action,
+in which results in duplicate code. We could also have made two different kind of mechanics but, that would
+be in conflict with the Solid Principle "Single responsibility".
+
+{Solution to stated problem}
