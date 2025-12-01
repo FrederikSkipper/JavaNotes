@@ -1,12 +1,18 @@
-{Dependecy injection}
+{Dependecy injection (DI)}
 
 {Definition}
 A techinique used to solve Inversion of control between classes and their dependecies.
 A dependency is an object that another object depends on.
+EG: Mechanic depend on a car
 
 {Problem}
-Without Dependecy injection we create 2 different methods for handling the same type of action,
+Without Dependecy injection we create two different methods for handling the same type of action,
 in which results in duplicate code. We could also have made two different kind of mechanics but, that would
 be in conflict with the Solid Principle "Single responsibility".
 
+Without dependecy injection we instansiate an instance of a class, directly in the class wherein we use it,
+this leads to thight coupling. 
+* Not reusible (Instansiate again in another dependent class) 
+
 {Solution to stated problem}
+With dependency injection we pass the depedency instance as an argument to the constructor of the depending class. 

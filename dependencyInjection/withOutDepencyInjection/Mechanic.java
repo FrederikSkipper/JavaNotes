@@ -5,23 +5,17 @@ public class Mechanic {
     private Car audi; 
 
     public Mechanic() {
+
+        // Tight coupling
         tesla = new tesla();
         audi = new audi(); 
     }
 
-    /* 
-
-    // The code for fixing a car \\
-    public void fixCar(){
-        System.out.println("Fixing car");
-    }
-    */
-
-    public void fixtesla() {
+    public void fixTesla() {
         System.out.println("fixing tesla");
     }
 
-    public void fixaudi() {
+    public void fixAudi() {
         System.out.println("fixing tesla");
     }
 
