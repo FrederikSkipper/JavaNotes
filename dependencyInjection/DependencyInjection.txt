@@ -1,4 +1,5 @@
 {Dependecy injection (DI)}
+Instance of class B provided to class A, without class A initialising it. (It gets passed as argument)
 
 {Definition}
 A techinique used to solve Inversion of control between classes and their dependecies.
@@ -12,7 +13,9 @@ be in conflict with the Solid Principle "Single responsibility".
 
 Without dependecy injection we instansiate an instance of a class, directly in the class wherein we use it,
 this leads to thight coupling. 
-* Not reusible (Instansiate again in another dependent class) 
+* Not reusible (Instansiate again in another dependent class).
+* Bad for testing (We can't Mock), 
 
 {Solution to stated problem}
 With dependency injection we pass the depedency instance as an argument to the constructor of the depending class. 
+

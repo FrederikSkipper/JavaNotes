@@ -9,12 +9,10 @@ public class Mechanic {
         this.car = car;
     }
 
-    public void fixCar(){
-        // fix car code
-    }
-
     // MAIN CODE:
     // audiMechanic instance belongs to class Mechanic but is constructed by the Audi class default constuctor.
-    Mechanic audiMechanic = new Mechanic(new Audi());
+    public static void main(String[] args) {
+        Mechanic audiMechanic = new Mechanic(new Audi());
+    }
 
 }
