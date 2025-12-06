@@ -1,4 +1,4 @@
-package startConcepts;
+package syntaxLookUp;
 
 public class helloWorld {
     public static void main(String[] args) {
