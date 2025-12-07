@@ -37,6 +37,9 @@ public class ArrayListLookUp {
         System.out.println(booksList.getFirst());
     }
 
+    /* Convert from arrayList to array */
+    Integer[] booksArray = new Integer[booksList.size()];
+    booksArray = booksList.toArray(booksArray);
 
     }   
 }
