@@ -3,7 +3,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
-EXPLANATION: Resizible array that maintains order and allow for duplicates. 
+EXPLANATION:
+Resizible array that maintains order and allow for duplicates. 
+
 */
 
 public class ArrayListLookUp {
@@ -28,6 +30,13 @@ public class ArrayListLookUp {
     booksList.contains("harry potter 2"); // return true or false
 
     booksList.remove(0);
+    
+    booksList.set(3,"harry potter 3");
+
+    booksList.isEmpty(); // boolean
+
+    booksList.lastIndexOf("harry potter 3"); // Return the last index which has the value otherwise -1. 
+    booksList.indexOf("harry potter 3"); // Return the first index which has the value otherwise -1. 
 
     for (String book : booksList) {
         book.replace("harry potter","batman");
