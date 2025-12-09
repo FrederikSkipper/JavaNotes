@@ -1,4 +1,4 @@
-package syntaxLookUp;
+package syntaxLookUp.collections.list;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +11,7 @@ Resizible array that maintains order and allow for duplicates.
 public class ArrayListLookUp {
     public static void main(String[] args) {
 
-    ArrayList<String> booksList = new ArrayList<String>(); // ArrayList containing objects
+    ArrayList<String> booksList = new ArrayList<String>(); // ArrayList 
     booksList.add("Harry potter 2");
     booksList.add(0, "harry potter 1"); // index, element
 

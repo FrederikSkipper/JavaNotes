@@ -1,4 +1,4 @@
-package syntaxLookUp;
+package syntaxLookUp.collections.list;
 
 import java.util.ArrayList;
 import java.util.Arrays;

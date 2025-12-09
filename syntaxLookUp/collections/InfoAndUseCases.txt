@@ -1,0 +1,11 @@
+{Collections}
+-------------------
+
+{UseCases}
+* Use list when we care about order and want to have index. (can contain duplicates)
+    {List useCases}
+    * ArrayList for storing data 
+    * linkedList to manipulate data
+* Use set when need to store unique elements. (Does not contain duplicates)
+* Use map when key value pairs are relevant. 
+
