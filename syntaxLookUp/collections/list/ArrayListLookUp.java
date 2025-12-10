@@ -4,8 +4,10 @@ import java.util.List;
 
 /*
 EXPLANATION:
-Resizible array that maintains order and allow for duplicates. 
-
+- Resizible array that maintains order and allow for duplicates. 
+- Ordered ASC
+- Allow duplicates
+- Objects must be same type
 */
 
 public class ArrayListLookUp {
