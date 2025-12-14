@@ -29,7 +29,16 @@ public class MethodReference {
     /*------------------------------------------------------------- */
     // Reference to an method of abritary instance but specific type
     
+    // before
+    words.forEach(word -> word.length());
 
+    // after
+    words.forEach(String::length);
+
+    /*------------------------------------------------------------- */
+    // Reference to contructor
+    // For later development
+    
 
 
 
