@@ -1,0 +1,3 @@
+{Lamda Expression}
+Enable: Passing code to parameters or assigning code to variables. 
+
