@@ -1,0 +1,13 @@
+{Stream API}
+
+{Definition}
+A stream is a sequence of object that supports various methods.
+These methods can be pipelined e.g .map().filter()
+
+- A stream takes an input of the Collections form. 
+
+There exist to types of stream methods Intermediate and terminal. 
+- The stream Intermediate methods are lazy, meaning .map result in a new stream served to .filter
+
+
+
