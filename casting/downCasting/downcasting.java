@@ -6,7 +6,7 @@ public class downcasting {
     snail mySnail = new snail(); // creating a snail object  
     insectStuff(mySnail); // output: slime attack snail age (We passed snail correct)
    
-    bee myBee = new bee(); // creating a bee object
+    Bee myBee = new Bee(); // creating a bee object
     insectStuff(myBee); // output: ClassCasting-ERROR (We pass a Bee but says in the downcast to expect a snail)
 
     }

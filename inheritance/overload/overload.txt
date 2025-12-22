@@ -1,0 +1,17 @@
+{Overload}
+{Defintition}
+- Allow a class to have multiple methods with same name, but must have different parms.
+- Can not overload by having a different return type alone. 
+- Compiler chooses correct method based on reference variable type. 
+
+-------------------------------------------------------------------------------
+{In relation to inheritance}
+- If the parent method's parms are different from the child, then it is overload.
+- Here return type of child does not matter, since it essentially is a new method. 
+
+
+
+
+
+
+

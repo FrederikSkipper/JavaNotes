@@ -1,0 +1,11 @@
+{Override}
+{Defintion}
+- Name, Parm, return type must match parent method. 
+- Compiler chooses method based on actual object type. 
+
+
+{Special occasions}
+Super keyword: can use parent method.
+Final methods: can not be overridden. 
+Static methods: can not be overridden.
+
