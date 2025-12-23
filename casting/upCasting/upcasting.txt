@@ -1,10 +1,10 @@
-Taking a snail object and casting it as an instect type. 
-* Access: When we upcast a subclass object to a superclass it can access parent members and child methods overriding parent methods. 
-* Java always lets an object of a subclass (snail) to be treated as an object of parent type (insect). {Because a snail is an insect}
-* The myInsect is treated as an insect so we can only use attributes of the casting type (insect)
-* Pure insect.lifetime will always choose the casting type method
-* Whereas function (insectStuff) who calls the object (myInsect) which is a snail object, will always use the non-casting class methods. 
-* always works becouse a snail is an insect.
+{upCasting}
+
+{Definition}
+Upcasting is converting a subclass ref to superclass ref. 
+
+{Access}
+When we upcast a subclass object to a superclass it can access parent members and child methods overriding parent methods.
+* Java always lets an object of a subclass (child) to be treated as an object of parent type (parent). {Because a child is a Parent}
 * Happends automatic
 
-EXAMPLE: We can use a parent method on the casted object, but not child methods which are not overridden like slime.

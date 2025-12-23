@@ -1,25 +1,51 @@
 package casting.upCasting;
-public class upcasting{
+
+public class upCasting{
     public static void main(String[] args){
-    insect myInsect = new snail(); // Creating a snail object and casting it to be an insect type (UPCASTING)
-
-    myInsect.lifetime(); // Casting succes (We use insect class own methods. output: snail lifetime)
+    Parent parent = new Child(); // upCast
+    parent.parentMethod(); // We can access parent methods.
+    parent.OverriddenMethod(); // we can access overridden child methods. 
+    parent.childMethod(); // We can not access child specific methods. 
     
-    insectStuff(myInsect); 
-    // Output: Snail lifetime, Snail legs (Java takes the input of any insect also subclass snail)
-    // So since we declared myInsect is an instance of class snail it uses the snail method. (Overridden)
+    GrandChild grandChild = new GrandChild();
+    grandChild.grandChildMethod();
+    grandChild.OverriddenMethod();
+    grandChild.parentMethod();
 
-
-
-    snail mySnail = new snail(); // creating a snail object  
-    insectStuff(mySnail); // output: snail lifetime + snail legs (We pass any object that is insect class or a subclass thereoff to the function)
-   
-
-
-    }
-    public static void insectStuff(insect insect){
-        insect.lifetime(); // parent and child method, but parent is overriden so child method. 
-        insect.legs(); // parent method works
-        insect.slime(); // Casting ERROR (The type we expect in the arguments for insectStuff determines the methods we can call and slime is not a method of insect)
+    Parent parentTwo = grandChild; // Upcast (Now we can only use parent and overridden child methods)
+    parentTwo.parentMethod(); // works
+    parentTwo.grandChildMethod(); // does not work after.
+    parentTwo.OverriddenMethod(); // works
     }
 }
+
+class Parent {
+    void parentMethod() {
+        // do sum
+    }
+    void OverriddenMethod() {
+        // do sum
+    }
+}
+
+class Child extends Parent {
+    void childMethod() {
+        // do sum
+    }
+    @Override
+    void OverriddenMethod() {
+        // do sum
+    }
+} 
+
+class GrandChild extends Parent {
+    void grandChildMethod() {
+        // do sum
+    }
+
+    void OverriddenMethod() {
+        // do sum
+    }
+} 
+
+
