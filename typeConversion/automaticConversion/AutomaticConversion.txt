@@ -1,0 +1,3 @@
+{Automatic Conversion (Widening)}
+Happends automatic!
+byte -> short -> int -> long -> float -> double. 

@@ -1,0 +1,4 @@
+{Explicit Conversion (Narrowing)}
+Manual conversion
+byte <- short <- int <- long <- float <- double. 
+Syntax: int i = (int) long_variable
