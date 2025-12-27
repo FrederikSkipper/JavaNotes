@@ -1,7 +1,6 @@
 package exceptions;
 
 public class example {
-    int balance = 0;
     static void removeBalance(int balance) throws IndexOutOfBoundsException {
         try {
         balance = balance - 200;

@@ -1,4 +1,4 @@
 Static Binding / Early binding
+* Private, final and static methods and variables use static binding. 
+* It uses type of class and fields, to call method.
 * Compile time
-* operator overloading method
-* it takes place using functions

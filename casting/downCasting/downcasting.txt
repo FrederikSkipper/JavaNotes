@@ -1,7 +1,16 @@
 {DownCasting}
 
 {Definition}
-downCasting is converting a superclass ref to subclass ref. 
+DownCasting is converting a superclass ref to subclass ref.
+Converting a parent object to a child object. 
+-------------------------------------------------------------
+Child childRef = (Child) parentRef (We say to compiler trust me parentRef is a Child)
+- we must ensure that the parentRef object is actually of the type Child. 
+Parent parentRef = new Child(); // comes before the downcast line and is valid.
+Here we know that the parentRef is a Child. 
+Parent parentref = new Parent(); // RuntimeError (We lied to compiler) 
+
+
 {Access}
 * Access: When we downcast a superclass object to a subclass it can access parent and child members. 
 * Does not work if typecast object is different from expected object. 

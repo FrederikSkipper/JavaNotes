@@ -15,7 +15,7 @@ class snail extends insect {
 
 class Main {
     public static void main(String[] args) {
-        insect insect = new snail(); // creating a snail object but reference it as insect // Compiler chooses Snail object at runtime and not the reference class. 
+        insect insect = new snail(); // creating a snail object but reference it as insect 
         insect.lifetime(); // output: snail age. - (dynamic binding at runtime determined which lifetime method is correct.)
     }
 }

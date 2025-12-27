@@ -2,6 +2,7 @@
 
 {Definition}
 Upcasting is converting a subclass ref to superclass ref. 
+It is converting a Child object to a Parent object. 
 
 {Access}
 When we upcast a subclass object to a superclass it can access parent members and child methods overriding parent methods.

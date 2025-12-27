@@ -1,14 +1,18 @@
 package binding.staticBinding;
 
 public class staticBinding {
-    private void shout() {
+    void shout() {
         System.out.println("HU HU HU");
     }
-public static void main (String[] args) {
-    staticBinding per = new staticBinding();
-    per.shout();
+
+    void shout(int i) {
+        System.out.println(i);
     }
 
+public static void main (String[] args) {
+    staticBinding a = new staticBinding();
+    a.shout(); // The type of shout is determined at compile time, based on input parms (Overloading)
+    }
 }
 
 

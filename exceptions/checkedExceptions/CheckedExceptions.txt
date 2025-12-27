@@ -1,0 +1,5 @@
+{CheckedExceptions}
+Checked exceptions require catch blocks.
+The throw statements doesnt contain a catch -> the exception is thrown up the call stack to the method call. 
+
+
