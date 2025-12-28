@@ -1,2 +1,2 @@
 nestedInterface
-* The nestedInterface itself is always static and public
+* Misses

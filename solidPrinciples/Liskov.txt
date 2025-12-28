@@ -1,5 +1,8 @@
 {Liskov's substitution}
-* Derived or child classes must be suitable for their base or parent class
+* Instances of superclass should be able to be replaced by instances of subclass without effecting program. 
+* Instances of subclass should be able to access all superclass methods and properties. 
+* A class should not be extended only because they share something in common. 
+* Composition is solution: Create a manager class
 
 Example:
-" A Cola is a derived class of Beverage and therefore we can swap them without behavioral changes"
+"A Cola is a derived class of Beverage and therefore we can swap them without behavioral changes"

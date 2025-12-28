@@ -2,7 +2,7 @@ Interface
 SYNTAX: Class x implements interface a
 * Inside interface body objects cant be initialised
 * Fields (variables) are static and final
-* Methods are abstract by deafult (no body) - but privaten are allowed
+* Methods are abstract by deafult (no body) - but private are allowed
 * Members are by default public (also methods maybe?)
 * Supports multiple inheritance (The main idea)
 * No constructor - like before no objects

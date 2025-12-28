@@ -12,3 +12,8 @@ Checked and uncheked exceptions:
 * Does not require handling at compile-time.
 * Classes under error and runtimeExceptions are unchecked.
 
+{Exception Tree}
+          {throwable}
+Error.                  Exception
+                Runtime         IoException, SQL-exception....
+        nullpointer, classCast

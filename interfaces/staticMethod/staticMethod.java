@@ -5,7 +5,7 @@ interface insect {
     static void lifetime () {
         System.out.println("insect age");
     }
-    //This method need to be overridden!
+    // This method need to be implemented!
     void overrideMethod(String age);
 }
 
@@ -17,7 +17,6 @@ class snail implements insect {
 
         mySnail.overrideMethod("Overriding second method in insect"); // Output "overiding second method in insect"
     }
-    @Override
     public void overrideMethod(String age){
         System.out.println(age);
     }

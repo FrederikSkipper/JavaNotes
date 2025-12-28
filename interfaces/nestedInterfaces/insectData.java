@@ -1,7 +1,7 @@
 package interfaces.nestedInterfaces;
 
 public class insectData implements list.dataCell {
-    @Override // here we implement the body of the abstract method
+    // here we implement the body of the abstract method
     public void getCell() { 
         System.out.println("Cell");
     }
