@@ -7,7 +7,7 @@ public class Main {
 
         // Observer initialised
         Observer stockApp = new StockApp();
-
+ 
         // Register an observer from stockApp on stockExchange Subject.
         stockExchange.addObserver(stockApp);
 

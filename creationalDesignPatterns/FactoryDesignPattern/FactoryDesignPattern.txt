@@ -2,7 +2,6 @@
 -------------------------
 
 {Definition}
-It lets us Create an interface 
 
 
 {Problem}
@@ -12,11 +11,11 @@ Then we need to restructure the entire codebase since the construction of all ob
 
 {Solution to the stated problem}
 We create a product interface containing all common methods for object creation. 
-We create concrete products Dorritos and Popcorn which implement the interface and has the method for getting the info the want. 
+We create concrete products Dorritos and Popcorn which implement the interface and has the method for getting the info we want. 
 We create the Creator class to declare the factory method, which is the method that is overridden and returns the correct object. (Dorritos or popcorn)
 We create the Concrete creator classes where we have defined the same method matching the abstract method, but in here we have the implementation, whereby
 we return the correct object. 
-Then when constructing an Employee of type DorritosEmployee and call the ingredientfinder, we method inside will be overriden and return the correct object.
+Then when constructing an Employee of type DorritosEmployee and call the ingredientfinder, the method inside will be overriden and return the correct object.
 This object can then call the correct method. 
 
 

@@ -4,6 +4,10 @@
 The observer pattern defines a depency for notifying when an objects state is changed.
 It notifies all objects that depend on said object and updates them automatically.
 
+{When to use?}
+1. Use when a change in one object result in a change in another object.
+2. When one object should notify other objects.
+
 {Problem}
 Break down an algorithm (assembleVechicle) so we can reuse the similar parts.
 

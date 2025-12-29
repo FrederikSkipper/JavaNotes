@@ -1,0 +1,4 @@
+{Singleton Design Pattern}
+It ensures that a class can only have one instance in the application. 
+It provides a global access point. (We can access the instance from anywhere)
+

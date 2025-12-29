@@ -5,6 +5,8 @@
 The Adapter Design Pattern allows us to wrap an incompatible object in an adapter so that it becomes compatible with another class.
 The Adapter Design Pattern allows the interface of an existing class to be used as another interface. 
 
+{When to use?}
+1. Allows for instances with incompatible interfaces to work together.
 {Problem}
 Sometimes in Software there is a need need for two incompatible interfaces to work together.
 It is here the Adapter design pattern comes into play.

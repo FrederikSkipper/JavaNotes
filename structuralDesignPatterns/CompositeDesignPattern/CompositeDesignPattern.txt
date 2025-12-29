@@ -4,6 +4,9 @@
 The Composite Design Pattern allows you to compose objects into tree structures.
 It makes the client treat individual objects and compositions of objects uniformly.
 
+{When to use?}
+* Tree like structures
+* Handle simple objects and composite objects uniformly.
 
 {Problem}
 Lets say you have a box, within this box there can be smaller boxes and products
@@ -31,8 +34,6 @@ Element of the tree that has sub-elements but does not know, the conrete.
 The client works with the interFace in which both the complex and simple objects use and therefore
 the client can handle them uniformly. 
 
-{When to use?}
-* Tree like structures
-* Handle simple objects and composite objects uniformly.
+
 
 

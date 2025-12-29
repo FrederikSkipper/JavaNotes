@@ -4,6 +4,10 @@
 Design pattern that defines the skeleton of an algorithm in superclass, 
 but lets subclasses override steps of the algortihm, without it changing the stucture of the algorithm.
 
+{When to use?}
+It is used when we have a general process that multiple classes follow, but some methods differ
+and can therefore be overridden. 
+
 {Problem}
 Break down an algorithm (assembleVechicle) so we can reuse the similar parts.
 
@@ -16,9 +20,7 @@ Declares template method, that is followed by all subclasses.
 2. Concrete class (car and motorBike)
 The subclasses that can override all the steps, but not change the template method. 
 
-{When to use?}
-It is used when we have a general process that multiple classes follow, but some methods differ
-and can therefore be overridden. 
+
 
 
 

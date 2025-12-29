@@ -5,6 +5,9 @@
 The decorator pattern allows us to add new functionality to an object dynamically without modifying the original code. 
 It creates decorator classes that wrap the orginal object and adds new functionality and attributes thereto.
 
+{When to use?}
+When we want to attach new behaviors to instances. (We wrap them in wrapper instances)
+
 {Problem}
 When we have a car object and we want to dynamacally construct the car via different sub-classes.
 Then if we want to apply both sub-classes then we need to add an extra subclass just to deal with the instance of,

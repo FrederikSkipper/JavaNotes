@@ -6,13 +6,17 @@ This enables us to pass it in as request argument.
 By this the client / Invoker doesnt need to know the specific request or have the implementation of it. 
 Therefore we can just call execute(command) and the concrete command will call the correct reciever method.
 
+{When to use?}
+1. Seperate the request to do an action, with the object calling the action method. 
+2. redo, undo, reset methods are often seen in command pattern 
+
 {Problem}
 Each LandMower action calling the Business logic layer directly. (Duplicate code)
 StartMowing ------> Business layer
 StopMowing ------> Business layer
 
 {Solution to stated problem}
-Instead we have one Invoker class contacting the business logic, not matter the action. 
+Instead we have one Invoker class contacting the business logic, no matter the action. 
 Execute ------> (StartMowing or Stopmowing) Business Layer
 
 {Design}

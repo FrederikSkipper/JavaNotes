@@ -1,9 +1,6 @@
 {Simple Factory Method}
 ---------------------------------------
-Guide: 
-Create Interface
-Implement a class against Interface
-Create a factory class
-Use the Factory
+Uses "if - else" or Switch statement to create correct objects. 
+No overriding to get correct method like in Factory Method. 
 ---------------------------------------
 
