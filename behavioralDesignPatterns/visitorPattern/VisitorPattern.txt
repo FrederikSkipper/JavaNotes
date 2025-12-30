@@ -5,7 +5,7 @@ It seperates algortihms/behaviors from the objects they operate on.
 Allowing us to add new behaviors without modifying the structure of the object. 
 
 {When to use?}
-1. Use when we have related classes (Not inherited) and want to apply different methods to them. 
+1. Use when we have related classes and want to apply different methods to them. 
 
 {Design}
 
