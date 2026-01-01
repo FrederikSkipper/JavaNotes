@@ -1,6 +1,6 @@
 {Override}
 {Defintion}
-- Name, Parm, must match parent method or child. 
+- Name, Parm, must match parent method.  
 - Compiler chooses method based on actual object type. 
 
 {Covariant}

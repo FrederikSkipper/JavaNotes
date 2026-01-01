@@ -1,0 +1,5 @@
+
+{Method Access modifiers}
+Given a method A, which is overriden by class B. 
+The method's access modifiers in a subclass (B) must be more accessible or the same as parent class (A).
+- We can not override, private, static and final method. 
