@@ -1,8 +1,10 @@
 {Override}
 {Defintion}
-- Name, Parm, return type must match parent method. 
+- Name, Parm, must match parent method or child. 
 - Compiler chooses method based on actual object type. 
 
+{Covariant}
+- Covariant: The return type is allowed to be of a subClass of parent class. 
 
 {Special occasions}
 Super keyword: can use parent method.
