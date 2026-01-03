@@ -11,6 +11,7 @@ public class StringCompare {
     {/*one == two*/} // False (Not the same objects)
 
     one.equals(two); // true (Checks String values)
+    three.equals(four); // true (Checks String values)
 
     three==four; // Compile error, but True
 

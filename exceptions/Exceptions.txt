@@ -17,3 +17,14 @@ Checked and uncheked exceptions:
 Error.                  Exception
                 Runtime         IoException, SQL-exception....
         nullpointer, classCast
+
+{Finally}
+Executes no matter what (Also if we dont have a valid catch)
+
+{Outside code}
+Executes if exeption is dealt with via a try catch. 
+
+{try}
+The code in the try block will run be run until an exception accurs. 
+If exception accurs at line 10, line 11 will not be run. 
+
